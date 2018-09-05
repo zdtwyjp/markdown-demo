@@ -75,7 +75,7 @@ title可加可不加
 
 
 # 九、表格
-语法：
+语法：   
 表头|表头|表头   
 ---|:--:|---:   
 内容|内容|内容   
@@ -91,9 +91,28 @@ title可加可不加
 
 
 
+# 其它
+## 内联代码
+``` 这里有一个字符 ```
 
+使用反撇号 `function()` 是指。
 
+``` TestTest
+   Test
+Test
+Test 
+```
 
+## 代码块
+  ```javascript
+var oldUnload = window.onbeforeunload;
+window.onbeforeunload = function() {
+    saveCoverage();
+    if (oldUnload) {
+        return oldUnload.apply(this, arguments);
+    }
+};
+  ``` 
 
 
 
